@@ -8,20 +8,79 @@ namespace BridgeCrewAsier
 {
     class Cell
     {
-        public int x { get; set; }
-        public int y { get; set; }
-        Boolean broken { get; set; }
+        private int row;
+        private int column;
+        private Boolean broken;
 
-        public Cell(int x, int y) {
-            this.x = x;
-            this.y = y;
-            this.broken = false;
+        public Cell()
+        {
         }
-        public Boolean equals(Cell c2) {
-            if ((this.x == c2.x) && (this.y == c2.y))
-                return true;
-            else
+
+        public Cell(int row, int column)
+        {
+            this.row = row;
+            this.column = column;
+        }
+
+        public int getRow()
+        {
+            return row;
+        }
+
+        public void setRow(int row)
+        {
+            this.row = row;
+        }
+
+        public int getColumn()
+        {
+            return column;
+        }
+
+        public void setColumn(int column)
+        {
+            this.column = column;
+        }
+
+        public Boolean isBroken()
+        {
+            return broken;
+        }
+
+        public void setBroken(Boolean broken)
+        {
+            this.broken = broken;
+        }
+
+        public int Distance(Cell cell)
+        {
+            return Math.Max(Math.Abs(this.getRow() - cell.getRow()), Math.Abs(this.getColumn() - cell.getColumn()));
+        }
+
+    public String toString()
+        {
+            return "(" + row + "," + column + ")";
+        }
+
+
+    public int hashCode()
+        {
+            int hash = 5;
+            return hash;
+        }
+
+    public Boolean equals(Cell other)
+        {
+            
+            if (this.row != other.row)
+            {
                 return false;
+            }
+            if (this.column != other.column)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

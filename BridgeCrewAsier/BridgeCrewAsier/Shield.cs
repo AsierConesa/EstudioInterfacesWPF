@@ -8,23 +8,51 @@ namespace BridgeCrewAsier
 {
     class Shield
     {
-        Cell[,] shield;
+        private int N = 8;
+        private int M = 8;
+        private Cell[,] map;
 
-        public Shield(int row, int col)
+        public Shield(int x, int y)
         {
-            shield = new Cell[row, col];
-            for (int i = 1; i <= row * col; i++)
+            map = new Cell[x,y];
+            startShield();
+        }
+
+        public void startShield()
+        {
+            for (int i = 0; i < map.Length*map.Length; i++)
             {
-                int x = row % i;
-                int y = (int)i / row;
-                shield[x, y] = new Cell(x, y);
+                int x = i % 3;
+                int y =(int) (i / map.Length);
+                map[x,y] = new Cell(x, y);
             }
         }
 
-        public void fixPath(Cell source, Cell target)
+        public Boolean isBroken(Cell cell)
         {
-            //con calma me lo implementas bro
-
+            return (map[cell.getRow(),cell.getColumn()].isBroken());
         }
+
+        public void setBroken(Cell cell)
+        {
+            map[cell.getRow(),cell.getColumn()].setBroken(true);
+        }
+
+        public void setFixed(Cell cell)
+        {
+            map[cell.getRow(),cell.getColumn()].setBroken(false);
+        }
+
+        public Boolean isInside(Cell cell)
+        {
+            return (cell.getRow() >= 0 && cell.getRow() < N && cell.getColumn() >= 0 && cell.getColumn() < M);
+        }
+
+        public Boolean isMovementOK(int i, int j)
+        {
+            return (i != 0 && j != 0);
+        }
+
+        
     }
 }
