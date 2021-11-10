@@ -5,9 +5,114 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BridgeCrewAsier"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid HorizontalAlignment="Left" Height="240" Margin="242,90,0,0" VerticalAlignment="Top" Width="286"/>
+        Title="MainWindow" Height="450" Width="753.034">
+    <!-- 8 x 8 grid -->
+    <Grid x:Name="grd_shield" Margin="52,46,383.6,38">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- all images inside the grid -->
+        <Image HorizontalAlignment="Left" Height="420" Margin="-52,-46,-383.3,-38" Grid.RowSpan="8" VerticalAlignment="Top" Width="748" Grid.ColumnSpan="8" RenderTransformOrigin="0.5,0.5" Source="background.gif"/>
+        <Rectangle Fill="#B20D39F1" HorizontalAlignment="Left" Height="337" Margin="-4,0,0,-1" Grid.RowSpan="8" Stroke="Black" VerticalAlignment="Top" Width="306" Grid.ColumnSpan="8" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Image x:Name="img_00" Grid.Column="0" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_01" Grid.Column="0" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_02" Grid.Column="0" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_03" Grid.Column="0" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_04" Grid.Column="0" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_05" Grid.Column="0" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_06" Grid.Column="0" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_07" Grid.Column="0" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_10" Grid.Column="1" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_11" Grid.Column="1" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_12" Grid.Column="1" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_13" Grid.Column="1" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_14" Grid.Column="1" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_15" Grid.Column="1" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_16" Grid.Column="1" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_17" Grid.Column="1" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_20" Grid.Column="2" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_21" Grid.Column="2" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_22" Grid.Column="2" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_23" Grid.Column="2" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_24" Grid.Column="2" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_25" Grid.Column="2" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_26" Grid.Column="2" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_27" Grid.Column="2" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_30" Grid.Column="3" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_31" Grid.Column="3" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_32" Grid.Column="3" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_33" Grid.Column="3" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_34" Grid.Column="3" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_35" Grid.Column="3" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_36" Grid.Column="3" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_37" Grid.Column="3" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_40" Grid.Column="4" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_41" Grid.Column="4" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_42" Grid.Column="4" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_43" Grid.Column="4" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_44" Grid.Column="4" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_45" Grid.Column="4" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_46" Grid.Column="4" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_47" Grid.Column="4" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_50" Grid.Column="5" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_51" Grid.Column="5" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_52" Grid.Column="5" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_53" Grid.Column="5" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_54" Grid.Column="5" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_55" Grid.Column="5" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_56" Grid.Column="5" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_57" Grid.Column="5" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_60" Grid.Column="6" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_61" Grid.Column="6" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_62" Grid.Column="6" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_63" Grid.Column="6" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_64" Grid.Column="6" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_65" Grid.Column="6" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_66" Grid.Column="6" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_67" Grid.Column="6" Grid.Row="7" Source="shield.png"/>
+
+        <Image x:Name="img_70" Grid.Column="7" Grid.Row="0" Source="shield.png"/>
+        <Image x:Name="img_71" Grid.Column="7" Grid.Row="1" Source="shield.png"/>
+        <Image x:Name="img_72" Grid.Column="7" Grid.Row="2" Source="shield.png"/>
+        <Image x:Name="img_73" Grid.Column="7" Grid.Row="3" Source="shield.png"/>
+        <Image x:Name="img_74" Grid.Column="7" Grid.Row="4" Source="shield.png"/>
+        <Image x:Name="img_75" Grid.Column="7" Grid.Row="5" Source="shield.png"/>
+        <Image x:Name="img_76" Grid.Column="7" Grid.Row="6" Source="shield.png"/>
+        <Image x:Name="img_77" Grid.Column="7" Grid.Row="7" Source="shield.png"/>
+
 
     </Grid>
 </Window>
