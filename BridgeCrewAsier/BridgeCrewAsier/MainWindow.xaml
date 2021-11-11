@@ -112,6 +112,8 @@
         <Image x:Name="img_75" Grid.Column="7" Grid.Row="5" Source="shield.png"/>
         <Image x:Name="img_76" Grid.Column="7" Grid.Row="6" Source="shield.png"/>
         <Image x:Name="img_77" Grid.Column="7" Grid.Row="7" Source="shield.png"/>
+        <Button x:Name="btn_init" Content="Iniciar" Grid.Column="7" HorizontalAlignment="Left" Margin="157.6,0.2,-260.4,0" Grid.Row="6" VerticalAlignment="Top" Width="142" Height="36" FontWeight="Bold" Click="btn_init_Click"/>
+        <ProgressBar x:Name="prb_shield" Grid.Column="7" HorizontalAlignment="Left" Height="52" Margin="107.6,19.6,-325.4,0" Grid.Row="1" VerticalAlignment="Top" Width="257" Grid.RowSpan="2"/>
 
 
     </Grid>

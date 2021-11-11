@@ -20,10 +20,11 @@ namespace BridgeCrewAsier
 
         public void startShield()
         {
-            for (int i = 0; i < map.Length*map.Length; i++)
+            int len = (int) Math.Sqrt(map.Length);
+            for (int i = 0; i < len*len; i++)
             {
-                int x = i % 3;
-                int y =(int) (i / map.Length);
+                int x = i % len;
+                int y =(int) (i / len);
                 map[x,y] = new Cell(x, y);
             }
         }
