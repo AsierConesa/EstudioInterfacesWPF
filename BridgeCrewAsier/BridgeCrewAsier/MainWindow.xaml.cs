@@ -61,8 +61,11 @@ namespace BridgeCrewAsier
                         }
                     }
                     //actualiza las casillas del grid real comparando con el shield
-
-
+                    for (int i = 0; i < dimension * dimension; i++) {
+                        int x = i % (dimension-1);
+                        int y = (int) (i / (dimension-1));
+                        
+                    }
                 }
                 
                 System.Threading.Thread.Sleep(1);
