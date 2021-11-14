@@ -17,3 +17,4 @@ C:\Repositorio\trabajoInterfacesIndividual\BridgeCrewAsier\BridgeCrewAsier\bin\D
 C:\Repositorio\trabajoInterfacesIndividual\BridgeCrewAsier\BridgeCrewAsier\bin\Debug\WpfAnimatedGif.pdb
 C:\Repositorio\trabajoInterfacesIndividual\BridgeCrewAsier\BridgeCrewAsier\bin\Debug\WpfAnimatedGif.xml
 C:\Repositorio\trabajoInterfacesIndividual\BridgeCrewAsier\BridgeCrewAsier\obj\Debug\BridgeCrewAsier.csproj.CopyComplete
+C:\Repositorio\trabajoInterfacesIndividual\BridgeCrewAsier\BridgeCrewAsier\obj\Debug\BridgeCrewAsier_Content.g.cs
