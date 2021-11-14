@@ -73,6 +73,7 @@ namespace BridgeCrewAsier
             lbl_music.Visibility = Visibility.Visible;
             btn_play.Visibility = Visibility.Visible;
             btn_pause.Visibility = Visibility.Visible;
+            prb_shield.Visibility = Visibility.Visible;
         }
 
         void worker_DoWork(object sender, DoWorkEventArgs e)
@@ -135,7 +136,7 @@ namespace BridgeCrewAsier
                     //repara
                     Fixer fixer = new Fixer();
                     //no funciona el metodo, hay bucle infinito
-                //    fixer.fixPath(c1, c2, shield);
+                    fixer.fixPath(c1, c2, shield);
                 }
                 else
                 {
