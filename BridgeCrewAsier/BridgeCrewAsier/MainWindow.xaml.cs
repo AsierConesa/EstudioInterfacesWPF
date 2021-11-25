@@ -117,11 +117,15 @@ namespace BridgeCrewAsier
 
 
             Random randomizator = new Random();
-            int x1 = randomizator.Next(0, dimension - 1);
-            int y1 = randomizator.Next(0, dimension - 1);
+            int x1 = randomizator.Next(0, dimension);
+            int y1 = randomizator.Next(0, dimension);
 
-            int x2 = randomizator.Next(0, dimension - 1);
-            int y2 = randomizator.Next(0, dimension - 1);
+            int x2 = randomizator.Next(0, dimension);
+            int y2 = randomizator.Next(0, dimension);
+
+            Console.WriteLine("1: " + x1 + "," + y1);
+            Console.WriteLine("2: " + x2 + "," + y2);
+            Console.WriteLine("-------------------");
 
             Cell c1 = new Cell(x1, y1);
             Cell c2 = new Cell(x2, y2);
@@ -153,6 +157,7 @@ namespace BridgeCrewAsier
             {
                 int x = i % dimension;
                 int y = (int)(i / dimension);
+                
                 String imgName = "img_" + x + y;
                 Image img = (Image)FindName(imgName);
                 if (shield.isBroken(new Cell(x, y)))
